@@ -8,16 +8,16 @@ html body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 img {
     max-width: 100%;
 }
 
-.wrapper {
-    min-height: 100%;
-}
 
 ul {
     margin: 0;
@@ -41,37 +41,127 @@ h6 {
     margin: 0;
 }
 
-.header {}
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
 
-.container {}
+.header {
+    padding: 16px 0 4px;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
-.header__container {}
+.container {
+    max-width: 1130px;
+    padding: 0px 5px;
+    margin: 0 auto;
+}
+
+.header__content {
+    max-width: 1370px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.logo {
+    max-width: 187px;
+    min-width: 81px;
+}
+
+.logo__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+    column-gap: 34px;
+}
+
+.nav__link {}
+
+.header__contact {
+    display: flex;
+    column-gap: 52px;
+    align-items: center;
+}
+
+.street {}
+
+.street__logo {}
+
+.street__logo::before {
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icons/vector2.svg) no-repeat center/contain;
+}
+
+.tel {}
 
 .main {}
 
 .hero {
-    background-image: url(.../img/bg/6d7c9c18453f27b3b14dc2b6848cbf46);
+    height: 100vh;
+    background-image: url(../img/bg/6d7c9c18453f27b3b14dc2b6848cbf46.png) no-reapet center/cover;
+    padding: 272px;
+    color: #ffffff;
 }
 
 .hero__main {}
 
-.hero__tittle {}
+.title {}
 
-.hero__supptittle {}
+.hero__subtitle {}
 
-.hero__text {}
-
-.hero__text-red {
-    color: #ED7173;
+.hero__btns {
+    display: flex;
 }
 
-.bottom {
-    border-color: #ffffff;
+.btn {
+    border-radius: 4px;
+    background: none;
+    min-width: 170px;
+    padding: 12px 16px;
 }
 
-.hero__advantage {}
-
-.hero__item {
-    border-color: #ffffff;
-
+.btn_theme_white {
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
+
+.hero__call-to-action {
+    color: #ed7173;
+}
+
+.advantages {
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    column-gap: 30px;
+}
+
+.hero__advantage {
+    flex: 0 1 276;
+}
+
+.advantage_theme_transparet {
+    border: 2px solid;
+}
+
+.advantage {
+    border-radius: 4px;
+    text-align: center;
+    padding: 16px 20px;
+}
+
+.advantage__img {}
+
+.advantage__desk {}
